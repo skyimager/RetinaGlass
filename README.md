@@ -114,9 +114,6 @@ True Positive:
 <div style="text-align: left"><img src="results/19.jpg" width="400"/></div>
 <br>
 
-<div style="text-align: left"><img src="results/16.jpg" width="400"/></div>
-<br>
-
 <div style="text-align: left"><img src="results/18.jpg" width="400"/></div>
 <br>
 
