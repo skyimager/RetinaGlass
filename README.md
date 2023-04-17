@@ -6,6 +6,7 @@ Training and Evaluation service for detecting glasses on Face.
 - [Pre-requisite](#prereq)
 - [Model Training](#train)
 - [Model Evaluation](#eval)
+- [Sample Results](#results)
 - [TO DO](#to-do)
 
 <a name="motiv"></a>
@@ -94,6 +95,7 @@ I have also added log file from one of my trainings [here](train-retinaglass_mob
 To evaluate the model on MTFL dataset I have written a custom function [test_mtfl.py](./Pytorch_Retinaface/test_mtfl.py) 
 For other dataset types, specific functions have to be written. 
 
+<a name="results"></a>
 ## 6. Sample results
 
 Sample result on 40 images shared by the team is attached in `results` folder. We see the trained model having 1.7MB in size is doing well for this task: 
@@ -112,9 +114,6 @@ True Positive:
 <br>
 
 <div style="text-align: left"><img src="results/19.jpg" width="400"/></div>
-<br>
-
-<div style="text-align: left"><img src="results/16.jpg" width="400"/></div>
 <br>
 
 <div style="text-align: left"><img src="results/18.jpg" width="400"/></div>
