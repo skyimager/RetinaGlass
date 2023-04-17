@@ -152,3 +152,14 @@ In the Makefile, the target `make test-sample` can be used to test on additional
 - [x] Test `make test-sample`
 - [ ] 
 - [ ] 
+
+## References
+- [Pytorch_Retinaface](https://github.com/biubug6/Pytorch_Retinaface)
+- [Retinaface (mxnet)](https://github.com/deepinsight/insightface/tree/master/RetinaFace)
+```
+@inproceedings{deng2019retinaface,
+title={RetinaFace: Single-stage Dense Face Localisation in the Wild},
+author={Deng, Jiankang and Guo, Jia and Yuxiang, Zhou and Jinke Yu and Irene Kotsia and Zafeiriou, Stefanos},
+booktitle={arxiv},
+year={2019}
+```
