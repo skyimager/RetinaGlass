@@ -1,0 +1,3 @@
+[submodule "yolov7-face"]
+	path = yolov7-face
+	url = https://github.com/derronqi/yolov7-face.git
