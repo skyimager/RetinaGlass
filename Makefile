@@ -131,7 +131,7 @@ test-sample:
 	@echo "Running Eval with Data:" $(DATA)-$(VER)
 	@echo "Running Eval with Exp:" $(EXP)
 	python Pytorch_Retinaface/test_sample.py \
-				--trained_model='./weights/retinaglass_mobile0.25_pad20/mobilenet0.25_pad20_epoch_60.pth' \
+				--trained_model='./weights/retinaglass_mobile0.25_pad20/mobilenet0.25_pad20_epoch_90.pth' \
 				--network='mobile0.25' \
 				--origin_size=True \
 				--save_folder='./sample_evaluate/sample_txt/' \

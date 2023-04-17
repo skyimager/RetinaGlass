@@ -27,7 +27,7 @@ I did not find the time to try this approach. I started with this, but somewhere
 Approach-2:
 - On similar lines described in Approach-1 we can also train Retinaface model available here: https://github.com/biubug6/Pytorch_Retinaface/tree/master
 - RetinaFace is specifically designed for face detection, while YOLOv7 is a more general object detection model. Generally, RetinaFace would be expected to provide better face detection performance since it is specifically optimized for this task.
-- RetinaFace with a MobileNet backbone is lightweight and optimized for mobile and edge devices, making it fast and efficient. The final model size is 1.7MB. 
+- RetinaFace with a MobileNet backbone is lightweight and optimized for mobile and edge devices, making it fast and efficient. **The final model size is 1.7MB.** 
 - For this approach also I would be using the MTFL dataset given here: `http://mmlab.ie.cuhk.edu.hk/projects/TCDCN.html`
 
 <a name="repo"></a>
@@ -96,7 +96,19 @@ For other dataset types, specific functions have to be written.
 
 ## 6. Sample results
 
+Sample result on 40 images shared by the team is attached in `results` folder. We see the trained model having 1.7MB in size is doing well for this task: 
+
+True Positive:
 <div style="text-align: left"><img src="results/13.jpg" width="400"/></div>
+<br>
+
+<div style="text-align: left"><img src="results/1.jpg" width="400"/></div>
+<br>
+
+<div style="text-align: left"><img src="results/3.jpg" width="400"/></div>
+<br>
+
+<div style="text-align: left"><img src="results/17.jpg" width="400"/></div>
 <br>
 
 <div style="text-align: left"><img src="results/19.jpg" width="400"/></div>
@@ -105,8 +117,29 @@ For other dataset types, specific functions have to be written.
 <div style="text-align: left"><img src="results/16.jpg" width="400"/></div>
 <br>
 
-<div style="text-align: left"><img src="results/22.jpg" width="400"/></div>
+<div style="text-align: left"><img src="results/18.jpg" width="400"/></div>
 <br>
+
+<div style="text-align: left"><img src="results/14.jpg" width="400"/></div>
+<br>
+
+True Negatives:
+<div style="text-align: left"><img src="results/29.jpg" width="400"/></div>
+<br>
+
+<div style="text-align: left"><img src="results/39.jpg" width="400"/></div>
+<br>
+
+False Positives: 
+None
+
+False Negative:
+<div style="text-align: left"><img src="results/5.jpg" width="400"/></div>
+<br>
+
+<div style="text-align: left"><img src="results/16.jpg" width="400"/></div>
+<br>
+
 
 <a name="to-do"></a>
 ## 6. To-Do
