@@ -1,0 +1,17 @@
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - python==3.8
+  - pytorch=1.12.1
+  - torchvision 
+  - torchaudio 
+  - cudatoolkit=11.3 
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - pip:
+    - --index-url=https://pypi.org/simple
+    - --trusted-host=[pypi.org]
+    - -rrequirements.txt
