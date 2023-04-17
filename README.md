@@ -1,5 +1,5 @@
 # RetinaGlass
-Training and Evaluation service for detecting glasses on Face. 
+Training and Evaluation service for detecting glasses on Face using custom Retinaface model (with mobilenet backbone) 
 
 - [Motivation](#motiv)
 - [Repo Structure](#repo)
@@ -28,7 +28,7 @@ I did not find the time to try this approach. I started with this, but somewhere
 Approach-2:
 - On similar lines described in Approach-1 we can also train Retinaface model available here: https://github.com/biubug6/Pytorch_Retinaface/tree/master
 - RetinaFace is specifically designed for face detection, while YOLOv7 is a more general object detection model. Generally, RetinaFace would be expected to provide better face detection performance since it is specifically optimized for this task.
-- RetinaFace with a MobileNet backbone is lightweight and optimized for mobile and edge devices, making it fast and efficient. **The final model size is 1.7MB.** 
+- RetinaFace with a MobileNet backbone is lightweight and optimized for mobile and edge devices, making it fast and efficient. **The final model size is 1.7MB.** This is without qunatization, and using qunatization this can be reduced further. 
 - For this approach also I would be using the MTFL dataset given here: `http://mmlab.ie.cuhk.edu.hk/projects/TCDCN.html`
 
 <a name="repo"></a>
@@ -98,7 +98,7 @@ For other dataset types, specific functions have to be written.
 <a name="results"></a>
 ## 6. Sample results
 
-Sample result on 40 images shared by the team is attached in `results` folder. We see the trained model having 1.7MB in size is doing well for this task: 
+Sample result on 40 images shared by the team is attached in `results` folder. We see the **trained model having 1.7MB** in size is doing well for this task: 
 
 True Positive:
 <div style="text-align: left"><img src="results/13.jpg" width="400"/></div>
@@ -139,6 +139,7 @@ False Negative:
 <div style="text-align: left"><img src="results/16.jpg" width="400"/></div>
 <br>
 
+In the Makefile, the target `make test-sample` can be used to test on additional images. Point the `test_datafolder` to the required directory that has test images. The scrip is using the test file [here](./Pytorch_Retinaface/test_sample.py). It will generate and dump visualisations under `results` folder.  
 
 <a name="to-do"></a>
 ## 6. To-Do
