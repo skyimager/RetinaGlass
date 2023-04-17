@@ -59,7 +59,7 @@ RetinaGlass
 ```
 
 <a name="setup"></a>
-## 3. Evnironment Setup
+## 3. Environment Setup
 
 The entire application is containerised. One can launch just 2 Makefile commands to get started with training:
 
