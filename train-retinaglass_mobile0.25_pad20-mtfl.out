@@ -1,0 +1,582 @@
+Printing net...
+RetinaFace(
+  (body): IntermediateLayerGetter(
+    (stage1): Sequential(
+      (0): Sequential(
+        (0): Conv2d(3, 8, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (1): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (1): Sequential(
+        (0): Conv2d(8, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=8, bias=False)
+        (1): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(8, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (2): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=16, bias=False)
+        (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (3): Sequential(
+        (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+        (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (4): Sequential(
+        (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=32, bias=False)
+        (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(32, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (5): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64, bias=False)
+        (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+    )
+    (stage2): Sequential(
+      (0): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=64, bias=False)
+        (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (1): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128, bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (2): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128, bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (3): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128, bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (4): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128, bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (5): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128, bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+    )
+    (stage3): Sequential(
+      (0): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=128, bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+      (1): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=256, bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): LeakyReLU(negative_slope=0.1, inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): LeakyReLU(negative_slope=0.1, inplace=True)
+      )
+    )
+  )
+  (fpn): FPN(
+    (output1): Sequential(
+      (0): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (output2): Sequential(
+      (0): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (output3): Sequential(
+      (0): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (merge1): Sequential(
+      (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (merge2): Sequential(
+      (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+  )
+  (ssh1): SSH(
+    (conv3X3): Sequential(
+      (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (conv5X5_1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (conv5X5_2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (conv7X7_2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (conv7x7_3): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (ssh2): SSH(
+    (conv3X3): Sequential(
+      (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (conv5X5_1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (conv5X5_2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (conv7X7_2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (conv7x7_3): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (ssh3): SSH(
+    (conv3X3): Sequential(
+      (0): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (conv5X5_1): Sequential(
+      (0): Conv2d(64, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (conv5X5_2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (conv7X7_2): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.1, inplace=True)
+    )
+    (conv7x7_3): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (ClassHead): ModuleList(
+    (0): ClassHead(
+      (conv1x1): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (1): ClassHead(
+      (conv1x1): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (2): ClassHead(
+      (conv1x1): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (BboxHead): ModuleList(
+    (0): BboxHead(
+      (conv1x1): Conv2d(64, 8, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (1): BboxHead(
+      (conv1x1): Conv2d(64, 8, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (2): BboxHead(
+      (conv1x1): Conv2d(64, 8, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (LandmarkHead): ModuleList(
+    (0): LandmarkHead(
+      (conv1x1): Conv2d(64, 20, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (1): LandmarkHead(
+      (conv1x1): Conv2d(64, 20, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (2): LandmarkHead(
+      (conv1x1): Conv2d(64, 20, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)
+Loading resume network...
+Loading Dataset...
+Epoch:1/250 || Epochiter: 250/1250 || Iter: 250/312500 || Loc: 0.8141 Cla: 2.5048 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0817 s || ETA: 7:05:23
+Epoch:1/250 || Epochiter: 500/1250 || Iter: 500/312500 || Loc: 0.7208 Cla: 1.6730 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0758 s || ETA: 6:34:14
+Epoch:1/250 || Epochiter: 750/1250 || Iter: 750/312500 || Loc: 1.1375 Cla: 1.6516 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0758 s || ETA: 6:33:46
+Epoch:1/250 || Epochiter: 1000/1250 || Iter: 1000/312500 || Loc: 0.6615 Cla: 1.2639 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0816 s || ETA: 7:03:31
+Epoch:1/250 || Epochiter: 1250/1250 || Iter: 1250/312500 || Loc: 0.8119 Cla: 1.2607 Landm: 14.2865 || LR: 0.00100000 || Batchtime: 0.0603 s || ETA: 5:12:59
+Epoch:2/250 || Epochiter: 250/1250 || Iter: 1500/312500 || Loc: 0.3932 Cla: 0.9001 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0663 s || ETA: 5:43:33
+Epoch:2/250 || Epochiter: 500/1250 || Iter: 1750/312500 || Loc: 0.4969 Cla: 1.1436 Landm: 6.2653 || LR: 0.00100000 || Batchtime: 0.0588 s || ETA: 5:04:30
+Epoch:2/250 || Epochiter: 750/1250 || Iter: 2000/312500 || Loc: 0.9536 Cla: 1.3498 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0677 s || ETA: 5:50:20
+Epoch:2/250 || Epochiter: 1000/1250 || Iter: 2250/312500 || Loc: 0.5520 Cla: 1.2606 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0645 s || ETA: 5:33:30
+Epoch:2/250 || Epochiter: 1250/1250 || Iter: 2500/312500 || Loc: 0.9239 Cla: 1.1870 Landm: 15.6472 || LR: 0.00100000 || Batchtime: 0.0659 s || ETA: 5:40:26
+Epoch:3/250 || Epochiter: 250/1250 || Iter: 2750/312500 || Loc: 0.5680 Cla: 1.6362 Landm: 24.8909 || LR: 0.00100000 || Batchtime: 0.0669 s || ETA: 5:45:35
+Epoch:3/250 || Epochiter: 500/1250 || Iter: 3000/312500 || Loc: 0.3230 Cla: 0.8134 Landm: 14.9804 || LR: 0.00100000 || Batchtime: 0.0630 s || ETA: 5:24:49
+Epoch:3/250 || Epochiter: 750/1250 || Iter: 3250/312500 || Loc: 0.8353 Cla: 1.0254 Landm: 14.5988 || LR: 0.00100000 || Batchtime: 0.0530 s || ETA: 4:33:18
+Epoch:3/250 || Epochiter: 1000/1250 || Iter: 3500/312500 || Loc: 0.8409 Cla: 1.0186 Landm: 21.9405 || LR: 0.00100000 || Batchtime: 0.0691 s || ETA: 5:55:57
+Epoch:3/250 || Epochiter: 1250/1250 || Iter: 3750/312500 || Loc: 0.5549 Cla: 0.8051 Landm: 8.8711 || LR: 0.00100000 || Batchtime: 0.0663 s || ETA: 5:41:16
+Epoch:4/250 || Epochiter: 250/1250 || Iter: 4000/312500 || Loc: 0.5167 Cla: 1.2876 Landm: 29.2424 || LR: 0.00100000 || Batchtime: 0.0740 s || ETA: 6:20:27
+Epoch:4/250 || Epochiter: 500/1250 || Iter: 4250/312500 || Loc: 0.2364 Cla: 0.9077 Landm: 12.8268 || LR: 0.00100000 || Batchtime: 0.0655 s || ETA: 5:36:45
+Epoch:4/250 || Epochiter: 750/1250 || Iter: 4500/312500 || Loc: 1.0769 Cla: 1.7209 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0568 s || ETA: 4:51:24
+Epoch:4/250 || Epochiter: 1000/1250 || Iter: 4750/312500 || Loc: 0.2462 Cla: 1.0490 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0642 s || ETA: 5:29:03
+Epoch:4/250 || Epochiter: 1250/1250 || Iter: 5000/312500 || Loc: 0.5785 Cla: 0.7403 Landm: 10.0349 || LR: 0.00100000 || Batchtime: 0.0567 s || ETA: 4:50:29
+Epoch:5/250 || Epochiter: 250/1250 || Iter: 5250/312500 || Loc: 0.4956 Cla: 0.8361 Landm: 22.4011 || LR: 0.00100000 || Batchtime: 0.0811 s || ETA: 6:55:25
+Epoch:5/250 || Epochiter: 500/1250 || Iter: 5500/312500 || Loc: 0.6184 Cla: 1.2073 Landm: 16.6034 || LR: 0.00100000 || Batchtime: 0.0740 s || ETA: 6:18:22
+Epoch:5/250 || Epochiter: 750/1250 || Iter: 5750/312500 || Loc: 0.5358 Cla: 0.9198 Landm: 12.9965 || LR: 0.00100000 || Batchtime: 0.0790 s || ETA: 6:44:07
+Epoch:5/250 || Epochiter: 1000/1250 || Iter: 6000/312500 || Loc: 0.6914 Cla: 1.1497 Landm: 23.1521 || LR: 0.00100000 || Batchtime: 0.0723 s || ETA: 6:09:29
+Epoch:5/250 || Epochiter: 1250/1250 || Iter: 6250/312500 || Loc: 0.6062 Cla: 1.4891 Landm: 13.1997 || LR: 0.00100000 || Batchtime: 0.0676 s || ETA: 5:44:50
+Epoch:6/250 || Epochiter: 250/1250 || Iter: 6500/312500 || Loc: 0.4541 Cla: 0.9372 Landm: 18.1337 || LR: 0.00100000 || Batchtime: 0.0687 s || ETA: 5:50:15
+Epoch:6/250 || Epochiter: 500/1250 || Iter: 6750/312500 || Loc: 0.3224 Cla: 0.6312 Landm: 10.4014 || LR: 0.00100000 || Batchtime: 0.0619 s || ETA: 5:15:41
+Epoch:6/250 || Epochiter: 750/1250 || Iter: 7000/312500 || Loc: 0.7399 Cla: 1.7628 Landm: 12.1530 || LR: 0.00100000 || Batchtime: 0.0690 s || ETA: 5:51:06
+Epoch:6/250 || Epochiter: 1000/1250 || Iter: 7250/312500 || Loc: 0.6461 Cla: 1.2259 Landm: 15.1916 || LR: 0.00100000 || Batchtime: 0.0584 s || ETA: 4:56:56
+Epoch:6/250 || Epochiter: 1250/1250 || Iter: 7500/312500 || Loc: 0.2322 Cla: 0.6504 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0495 s || ETA: 4:11:43
+Epoch:7/250 || Epochiter: 250/1250 || Iter: 7750/312500 || Loc: 0.6067 Cla: 1.4684 Landm: 24.0278 || LR: 0.00100000 || Batchtime: 0.0836 s || ETA: 7:04:46
+Epoch:7/250 || Epochiter: 500/1250 || Iter: 8000/312500 || Loc: 0.6742 Cla: 1.0787 Landm: 13.7725 || LR: 0.00100000 || Batchtime: 0.0618 s || ETA: 5:13:46
+Epoch:7/250 || Epochiter: 750/1250 || Iter: 8250/312500 || Loc: 0.3189 Cla: 0.6827 Landm: 19.3409 || LR: 0.00100000 || Batchtime: 0.0682 s || ETA: 5:45:41
+Epoch:7/250 || Epochiter: 1000/1250 || Iter: 8500/312500 || Loc: 0.4550 Cla: 0.6773 Landm: 14.7538 || LR: 0.00100000 || Batchtime: 0.0665 s || ETA: 5:36:57
+Epoch:7/250 || Epochiter: 1250/1250 || Iter: 8750/312500 || Loc: 0.4311 Cla: 0.8175 Landm: 14.0143 || LR: 0.00100000 || Batchtime: 0.0629 s || ETA: 5:18:12
+Epoch:8/250 || Epochiter: 250/1250 || Iter: 9000/312500 || Loc: 0.6030 Cla: 1.0140 Landm: 12.6212 || LR: 0.00100000 || Batchtime: 0.0659 s || ETA: 5:33:27
+Epoch:8/250 || Epochiter: 500/1250 || Iter: 9250/312500 || Loc: 0.5640 Cla: 1.3739 Landm: 19.6348 || LR: 0.00100000 || Batchtime: 0.0715 s || ETA: 6:01:30
+Epoch:8/250 || Epochiter: 750/1250 || Iter: 9500/312500 || Loc: 0.4986 Cla: 0.9674 Landm: 14.2579 || LR: 0.00100000 || Batchtime: 0.0763 s || ETA: 6:25:26
+Epoch:8/250 || Epochiter: 1000/1250 || Iter: 9750/312500 || Loc: 0.5102 Cla: 1.0396 Landm: 17.7978 || LR: 0.00100000 || Batchtime: 0.0692 s || ETA: 5:49:07
+Epoch:8/250 || Epochiter: 1250/1250 || Iter: 10000/312500 || Loc: 0.3564 Cla: 0.6929 Landm: 19.9043 || LR: 0.00100000 || Batchtime: 0.0538 s || ETA: 4:31:15
+Epoch:9/250 || Epochiter: 250/1250 || Iter: 10250/312500 || Loc: 0.3694 Cla: 0.7514 Landm: 19.9821 || LR: 0.00100000 || Batchtime: 0.0711 s || ETA: 5:58:10
+Epoch:9/250 || Epochiter: 500/1250 || Iter: 10500/312500 || Loc: 0.2695 Cla: 1.2216 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0829 s || ETA: 6:57:12
+Epoch:9/250 || Epochiter: 750/1250 || Iter: 10750/312500 || Loc: 0.7150 Cla: 1.1758 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0839 s || ETA: 7:01:59
+Epoch:9/250 || Epochiter: 1000/1250 || Iter: 11000/312500 || Loc: 0.7878 Cla: 1.0493 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0737 s || ETA: 6:10:26
+Epoch:9/250 || Epochiter: 1250/1250 || Iter: 11250/312500 || Loc: 0.7249 Cla: 1.2866 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0473 s || ETA: 3:57:19
+Epoch:10/250 || Epochiter: 250/1250 || Iter: 11500/312500 || Loc: 0.2059 Cla: 0.7753 Landm: 55.3027 || LR: 0.00100000 || Batchtime: 0.0753 s || ETA: 6:17:43
+Epoch:10/250 || Epochiter: 500/1250 || Iter: 11750/312500 || Loc: 0.4830 Cla: 0.7451 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0772 s || ETA: 6:26:44
+Epoch:10/250 || Epochiter: 750/1250 || Iter: 12000/312500 || Loc: 0.2385 Cla: 0.7583 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0838 s || ETA: 6:59:31
+Epoch:10/250 || Epochiter: 1000/1250 || Iter: 12250/312500 || Loc: 0.5365 Cla: 0.7882 Landm: 11.1073 || LR: 0.00100000 || Batchtime: 0.0551 s || ETA: 4:35:50
+Epoch:10/250 || Epochiter: 1250/1250 || Iter: 12500/312500 || Loc: 0.4026 Cla: 0.9221 Landm: 17.1780 || LR: 0.00100000 || Batchtime: 0.0480 s || ETA: 3:59:45
+Epoch:11/250 || Epochiter: 250/1250 || Iter: 12750/312500 || Loc: 0.6485 Cla: 1.2859 Landm: 14.5757 || LR: 0.00100000 || Batchtime: 0.0810 s || ETA: 6:44:52
+Epoch:11/250 || Epochiter: 500/1250 || Iter: 13000/312500 || Loc: 0.5579 Cla: 0.6737 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0618 s || ETA: 5:08:36
+Epoch:11/250 || Epochiter: 750/1250 || Iter: 13250/312500 || Loc: 0.6606 Cla: 1.4701 Landm: 8.1692 || LR: 0.00100000 || Batchtime: 0.0821 s || ETA: 6:49:15
+Epoch:11/250 || Epochiter: 1000/1250 || Iter: 13500/312500 || Loc: 0.3506 Cla: 0.7462 Landm: 12.1104 || LR: 0.00100000 || Batchtime: 0.0598 s || ETA: 4:57:49
+Epoch:11/250 || Epochiter: 1250/1250 || Iter: 13750/312500 || Loc: 0.3272 Cla: 0.9513 Landm: 15.8809 || LR: 0.00100000 || Batchtime: 0.0527 s || ETA: 4:22:35
+Epoch:12/250 || Epochiter: 250/1250 || Iter: 14000/312500 || Loc: 0.3847 Cla: 0.7321 Landm: 20.0547 || LR: 0.00100000 || Batchtime: 0.0824 s || ETA: 6:49:49
+Epoch:12/250 || Epochiter: 500/1250 || Iter: 14250/312500 || Loc: 0.8169 Cla: 1.2555 Landm: 10.9072 || LR: 0.00100000 || Batchtime: 0.0777 s || ETA: 6:26:14
+Epoch:12/250 || Epochiter: 750/1250 || Iter: 14500/312500 || Loc: 0.4215 Cla: 0.7336 Landm: 27.2600 || LR: 0.00100000 || Batchtime: 0.0784 s || ETA: 6:29:13
+Epoch:12/250 || Epochiter: 1000/1250 || Iter: 14750/312500 || Loc: 0.2474 Cla: 0.7578 Landm: 12.9546 || LR: 0.00100000 || Batchtime: 0.0860 s || ETA: 7:06:34
+Epoch:12/250 || Epochiter: 1250/1250 || Iter: 15000/312500 || Loc: 0.4664 Cla: 0.7124 Landm: 18.9057 || LR: 0.00100000 || Batchtime: 0.0578 s || ETA: 4:46:25
+Epoch:13/250 || Epochiter: 250/1250 || Iter: 15250/312500 || Loc: 0.5507 Cla: 0.8679 Landm: 11.1064 || LR: 0.00100000 || Batchtime: 0.0851 s || ETA: 7:01:40
+Epoch:13/250 || Epochiter: 500/1250 || Iter: 15500/312500 || Loc: 0.6687 Cla: 1.2186 Landm: 7.1074 || LR: 0.00100000 || Batchtime: 0.0624 s || ETA: 5:08:40
+Epoch:13/250 || Epochiter: 750/1250 || Iter: 15750/312500 || Loc: 0.4941 Cla: 1.0388 Landm: 7.0880 || LR: 0.00100000 || Batchtime: 0.0743 s || ETA: 6:07:33
+Epoch:13/250 || Epochiter: 1000/1250 || Iter: 16000/312500 || Loc: 0.3304 Cla: 0.7790 Landm: 11.6496 || LR: 0.00100000 || Batchtime: 0.0686 s || ETA: 5:38:55
+Epoch:13/250 || Epochiter: 1250/1250 || Iter: 16250/312500 || Loc: 0.3424 Cla: 0.9509 Landm: 6.7773 || LR: 0.00100000 || Batchtime: 0.0596 s || ETA: 4:54:12
+Epoch:14/250 || Epochiter: 250/1250 || Iter: 16500/312500 || Loc: 0.4221 Cla: 0.9547 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0963 s || ETA: 7:54:59
+Epoch:14/250 || Epochiter: 500/1250 || Iter: 16750/312500 || Loc: 0.2875 Cla: 0.6302 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0725 s || ETA: 5:57:17
+Epoch:14/250 || Epochiter: 750/1250 || Iter: 17000/312500 || Loc: 0.2740 Cla: 0.7788 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0618 s || ETA: 5:04:19
+Epoch:14/250 || Epochiter: 1000/1250 || Iter: 17250/312500 || Loc: 0.7420 Cla: 1.0360 Landm: 15.4907 || LR: 0.00100000 || Batchtime: 0.0824 s || ETA: 6:45:32
+Epoch:14/250 || Epochiter: 1250/1250 || Iter: 17500/312500 || Loc: 0.6977 Cla: 0.8065 Landm: 12.9739 || LR: 0.00100000 || Batchtime: 0.0628 s || ETA: 5:08:37
+Epoch:15/250 || Epochiter: 250/1250 || Iter: 17750/312500 || Loc: 0.2332 Cla: 1.0721 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0867 s || ETA: 7:06:09
+Epoch:15/250 || Epochiter: 500/1250 || Iter: 18000/312500 || Loc: 0.4944 Cla: 0.8909 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0772 s || ETA: 6:18:43
+Epoch:15/250 || Epochiter: 750/1250 || Iter: 18250/312500 || Loc: 0.7891 Cla: 1.0104 Landm: 14.0964 || LR: 0.00100000 || Batchtime: 0.0719 s || ETA: 5:52:39
+Epoch:15/250 || Epochiter: 1000/1250 || Iter: 18500/312500 || Loc: 0.3139 Cla: 1.0418 Landm: 19.3024 || LR: 0.00100000 || Batchtime: 0.0679 s || ETA: 5:32:33
+Epoch:15/250 || Epochiter: 1250/1250 || Iter: 18750/312500 || Loc: 0.4447 Cla: 0.9839 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0594 s || ETA: 4:50:59
+Epoch:16/250 || Epochiter: 250/1250 || Iter: 19000/312500 || Loc: 0.3316 Cla: 0.7224 Landm: 3.8371 || LR: 0.00100000 || Batchtime: 0.0656 s || ETA: 5:20:51
+Epoch:16/250 || Epochiter: 500/1250 || Iter: 19250/312500 || Loc: 0.3811 Cla: 0.7762 Landm: 13.3509 || LR: 0.00100000 || Batchtime: 0.0907 s || ETA: 7:23:32
+Epoch:16/250 || Epochiter: 750/1250 || Iter: 19500/312500 || Loc: 0.8554 Cla: 1.4150 Landm: 31.5888 || LR: 0.00100000 || Batchtime: 0.0794 s || ETA: 6:27:38
+Epoch:16/250 || Epochiter: 1000/1250 || Iter: 19750/312500 || Loc: 0.7930 Cla: 1.2221 Landm: 11.7780 || LR: 0.00100000 || Batchtime: 0.0667 s || ETA: 5:25:38
+Epoch:16/250 || Epochiter: 1250/1250 || Iter: 20000/312500 || Loc: 0.4751 Cla: 0.7444 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0485 s || ETA: 3:56:36
+Epoch:17/250 || Epochiter: 250/1250 || Iter: 20250/312500 || Loc: 0.7808 Cla: 0.9723 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0841 s || ETA: 6:49:51
+Epoch:17/250 || Epochiter: 500/1250 || Iter: 20500/312500 || Loc: 0.4702 Cla: 1.0502 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0774 s || ETA: 6:16:27
+Epoch:17/250 || Epochiter: 750/1250 || Iter: 20750/312500 || Loc: 1.0663 Cla: 1.2994 Landm: 7.8783 || LR: 0.00100000 || Batchtime: 0.0818 s || ETA: 6:37:53
+Epoch:17/250 || Epochiter: 1000/1250 || Iter: 21000/312500 || Loc: 0.4531 Cla: 0.9632 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0661 s || ETA: 5:21:15
+Epoch:17/250 || Epochiter: 1250/1250 || Iter: 21250/312500 || Loc: 0.4945 Cla: 0.8339 Landm: 6.2759 || LR: 0.00100000 || Batchtime: 0.0586 s || ETA: 4:44:21
+Epoch:18/250 || Epochiter: 250/1250 || Iter: 21500/312500 || Loc: 0.3615 Cla: 0.8941 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0699 s || ETA: 5:39:05
+Epoch:18/250 || Epochiter: 500/1250 || Iter: 21750/312500 || Loc: 0.6821 Cla: 0.9782 Landm: 14.9635 || LR: 0.00100000 || Batchtime: 0.0898 s || ETA: 7:15:23
+Epoch:18/250 || Epochiter: 750/1250 || Iter: 22000/312500 || Loc: 0.5610 Cla: 1.7292 Landm: 46.1333 || LR: 0.00100000 || Batchtime: 0.0829 s || ETA: 6:41:17
+Epoch:18/250 || Epochiter: 1000/1250 || Iter: 22250/312500 || Loc: 0.4410 Cla: 0.8885 Landm: 28.7362 || LR: 0.00100000 || Batchtime: 0.0710 s || ETA: 5:43:25
+Epoch:18/250 || Epochiter: 1250/1250 || Iter: 22500/312500 || Loc: 0.2302 Cla: 0.7284 Landm: 11.9512 || LR: 0.00100000 || Batchtime: 0.0507 s || ETA: 4:05:06
+Epoch:19/250 || Epochiter: 250/1250 || Iter: 22750/312500 || Loc: 0.2490 Cla: 0.8458 Landm: 14.1725 || LR: 0.00100000 || Batchtime: 0.0722 s || ETA: 5:48:26
+Epoch:19/250 || Epochiter: 500/1250 || Iter: 23000/312500 || Loc: 0.3572 Cla: 0.6791 Landm: 29.4285 || LR: 0.00100000 || Batchtime: 0.0677 s || ETA: 5:26:43
+Epoch:19/250 || Epochiter: 750/1250 || Iter: 23250/312500 || Loc: 0.5144 Cla: 0.9809 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0602 s || ETA: 4:50:20
+Epoch:19/250 || Epochiter: 1000/1250 || Iter: 23500/312500 || Loc: 0.3507 Cla: 0.7249 Landm: 16.5185 || LR: 0.00100000 || Batchtime: 0.0637 s || ETA: 5:06:51
+Epoch:19/250 || Epochiter: 1250/1250 || Iter: 23750/312500 || Loc: 0.2834 Cla: 0.7006 Landm: 10.9387 || LR: 0.00100000 || Batchtime: 0.0613 s || ETA: 4:54:48
+Epoch:20/250 || Epochiter: 250/1250 || Iter: 24000/312500 || Loc: 0.2384 Cla: 0.6215 Landm: 26.7789 || LR: 0.00100000 || Batchtime: 0.0729 s || ETA: 5:50:38
+Epoch:20/250 || Epochiter: 500/1250 || Iter: 24250/312500 || Loc: 0.3854 Cla: 0.9244 Landm: 10.6733 || LR: 0.00100000 || Batchtime: 0.0707 s || ETA: 5:39:35
+Epoch:20/250 || Epochiter: 750/1250 || Iter: 24500/312500 || Loc: 0.3080 Cla: 0.8568 Landm: 29.1660 || LR: 0.00100000 || Batchtime: 0.0649 s || ETA: 5:11:27
+Epoch:20/250 || Epochiter: 1000/1250 || Iter: 24750/312500 || Loc: 0.3511 Cla: 1.0431 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0777 s || ETA: 6:12:40
+Epoch:20/250 || Epochiter: 1250/1250 || Iter: 25000/312500 || Loc: 0.2149 Cla: 0.6595 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0540 s || ETA: 4:18:36
+Epoch:21/250 || Epochiter: 250/1250 || Iter: 25250/312500 || Loc: 0.6773 Cla: 1.7509 Landm: 11.7102 || LR: 0.00100000 || Batchtime: 0.0616 s || ETA: 4:55:07
+Epoch:21/250 || Epochiter: 500/1250 || Iter: 25500/312500 || Loc: 0.2953 Cla: 0.6964 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0687 s || ETA: 5:28:36
+Epoch:21/250 || Epochiter: 750/1250 || Iter: 25750/312500 || Loc: 0.6071 Cla: 0.8269 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0820 s || ETA: 6:32:06
+Epoch:21/250 || Epochiter: 1000/1250 || Iter: 26000/312500 || Loc: 0.2758 Cla: 0.9094 Landm: 11.1921 || LR: 0.00100000 || Batchtime: 0.0748 s || ETA: 5:56:59
+Epoch:21/250 || Epochiter: 1250/1250 || Iter: 26250/312500 || Loc: 0.4591 Cla: 0.8712 Landm: 7.9478 || LR: 0.00100000 || Batchtime: 0.0729 s || ETA: 5:47:56
+Epoch:22/250 || Epochiter: 250/1250 || Iter: 26500/312500 || Loc: 0.3984 Cla: 0.7387 Landm: 21.5254 || LR: 0.00100000 || Batchtime: 0.0830 s || ETA: 6:35:45
+Epoch:22/250 || Epochiter: 500/1250 || Iter: 26750/312500 || Loc: 0.5531 Cla: 0.8498 Landm: 12.1607 || LR: 0.00100000 || Batchtime: 0.0886 s || ETA: 7:02:06
+Epoch:22/250 || Epochiter: 750/1250 || Iter: 27000/312500 || Loc: 0.4092 Cla: 0.8932 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0783 s || ETA: 6:12:32
+Epoch:22/250 || Epochiter: 1000/1250 || Iter: 27250/312500 || Loc: 0.3877 Cla: 1.0373 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0858 s || ETA: 6:47:48
+Epoch:22/250 || Epochiter: 1250/1250 || Iter: 27500/312500 || Loc: 0.8874 Cla: 1.2297 Landm: 34.8418 || LR: 0.00100000 || Batchtime: 0.0548 s || ETA: 4:20:28
+Epoch:23/250 || Epochiter: 250/1250 || Iter: 27750/312500 || Loc: 1.3797 Cla: 1.5037 Landm: 6.4368 || LR: 0.00100000 || Batchtime: 0.0817 s || ETA: 6:27:33
+Epoch:23/250 || Epochiter: 500/1250 || Iter: 28000/312500 || Loc: 0.4000 Cla: 0.8659 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0691 s || ETA: 5:27:38
+Epoch:23/250 || Epochiter: 750/1250 || Iter: 28250/312500 || Loc: 0.3242 Cla: 1.0110 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0580 s || ETA: 4:34:53
+Epoch:23/250 || Epochiter: 1000/1250 || Iter: 28500/312500 || Loc: 0.3191 Cla: 0.7035 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0735 s || ETA: 5:47:44
+Epoch:23/250 || Epochiter: 1250/1250 || Iter: 28750/312500 || Loc: 0.5491 Cla: 0.8994 Landm: 9.9012 || LR: 0.00100000 || Batchtime: 0.0575 s || ETA: 4:32:00
+Epoch:24/250 || Epochiter: 250/1250 || Iter: 29000/312500 || Loc: 0.4509 Cla: 0.6833 Landm: 30.3759 || LR: 0.00100000 || Batchtime: 0.0668 s || ETA: 5:15:38
+Epoch:24/250 || Epochiter: 500/1250 || Iter: 29250/312500 || Loc: 0.6049 Cla: 0.9701 Landm: 27.9502 || LR: 0.00100000 || Batchtime: 0.0810 s || ETA: 6:22:20
+Epoch:24/250 || Epochiter: 750/1250 || Iter: 29500/312500 || Loc: 0.6656 Cla: 2.0336 Landm: 21.0723 || LR: 0.00100000 || Batchtime: 0.0847 s || ETA: 6:39:38
+Epoch:24/250 || Epochiter: 1000/1250 || Iter: 29750/312500 || Loc: 0.7224 Cla: 1.0907 Landm: 17.5468 || LR: 0.00100000 || Batchtime: 0.0711 s || ETA: 5:35:16
+Epoch:24/250 || Epochiter: 1250/1250 || Iter: 30000/312500 || Loc: 0.4198 Cla: 0.7593 Landm: 4.6258 || LR: 0.00100000 || Batchtime: 0.0549 s || ETA: 4:18:15
+Epoch:25/250 || Epochiter: 250/1250 || Iter: 30250/312500 || Loc: 0.9008 Cla: 1.9642 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0775 s || ETA: 6:04:37
+Epoch:25/250 || Epochiter: 500/1250 || Iter: 30500/312500 || Loc: 0.6931 Cla: 1.3266 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0654 s || ETA: 5:07:08
+Epoch:25/250 || Epochiter: 750/1250 || Iter: 30750/312500 || Loc: 0.7063 Cla: 0.9218 Landm: 17.1061 || LR: 0.00100000 || Batchtime: 0.0727 s || ETA: 5:41:24
+Epoch:25/250 || Epochiter: 1000/1250 || Iter: 31000/312500 || Loc: 0.9015 Cla: 2.0869 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0747 s || ETA: 5:50:29
+Epoch:25/250 || Epochiter: 1250/1250 || Iter: 31250/312500 || Loc: 0.5450 Cla: 1.3219 Landm: 13.1476 || LR: 0.00100000 || Batchtime: 0.0589 s || ETA: 4:35:53
+Epoch:26/250 || Epochiter: 250/1250 || Iter: 31500/312500 || Loc: 0.5306 Cla: 1.3819 Landm: 16.0054 || LR: 0.00100000 || Batchtime: 0.0669 s || ETA: 5:13:11
+Epoch:26/250 || Epochiter: 500/1250 || Iter: 31750/312500 || Loc: 0.5729 Cla: 0.9223 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0567 s || ETA: 4:25:30
+Epoch:26/250 || Epochiter: 750/1250 || Iter: 32000/312500 || Loc: 0.2148 Cla: 0.6873 Landm: 18.4648 || LR: 0.00100000 || Batchtime: 0.0650 s || ETA: 5:03:40
+Epoch:26/250 || Epochiter: 1000/1250 || Iter: 32250/312500 || Loc: 0.5392 Cla: 1.1754 Landm: 8.8700 || LR: 0.00100000 || Batchtime: 0.0710 s || ETA: 5:31:26
+Epoch:26/250 || Epochiter: 1250/1250 || Iter: 32500/312500 || Loc: 0.4603 Cla: 0.6731 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0615 s || ETA: 4:47:12
+Epoch:27/250 || Epochiter: 250/1250 || Iter: 32750/312500 || Loc: 0.4400 Cla: 1.0528 Landm: 12.6183 || LR: 0.00100000 || Batchtime: 0.0726 s || ETA: 5:38:20
+Epoch:27/250 || Epochiter: 500/1250 || Iter: 33000/312500 || Loc: 0.3871 Cla: 0.7269 Landm: 29.0462 || LR: 0.00100000 || Batchtime: 0.0759 s || ETA: 5:53:42
+Epoch:27/250 || Epochiter: 750/1250 || Iter: 33250/312500 || Loc: 0.4763 Cla: 0.9436 Landm: 16.2012 || LR: 0.00100000 || Batchtime: 0.0652 s || ETA: 5:03:26
+Epoch:27/250 || Epochiter: 1000/1250 || Iter: 33500/312500 || Loc: 0.4918 Cla: 0.8010 Landm: 9.3968 || LR: 0.00100000 || Batchtime: 0.0592 s || ETA: 4:35:10
+Epoch:27/250 || Epochiter: 1250/1250 || Iter: 33750/312500 || Loc: 0.3036 Cla: 0.6762 Landm: 21.1494 || LR: 0.00100000 || Batchtime: 0.0588 s || ETA: 4:33:16
+Epoch:28/250 || Epochiter: 250/1250 || Iter: 34000/312500 || Loc: 0.5042 Cla: 0.7840 Landm: 12.2141 || LR: 0.00100000 || Batchtime: 0.0578 s || ETA: 4:28:28
+Epoch:28/250 || Epochiter: 500/1250 || Iter: 34250/312500 || Loc: 1.1587 Cla: 2.1586 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0809 s || ETA: 6:15:05
+Epoch:28/250 || Epochiter: 750/1250 || Iter: 34500/312500 || Loc: 0.9175 Cla: 1.2069 Landm: 4.6989 || LR: 0.00100000 || Batchtime: 0.0609 s || ETA: 4:42:22
+Epoch:28/250 || Epochiter: 1000/1250 || Iter: 34750/312500 || Loc: 0.3056 Cla: 0.6898 Landm: 8.5801 || LR: 0.00100000 || Batchtime: 0.0716 s || ETA: 5:31:14
+Epoch:28/250 || Epochiter: 1250/1250 || Iter: 35000/312500 || Loc: 0.2650 Cla: 1.0399 Landm: 11.0505 || LR: 0.00100000 || Batchtime: 0.0914 s || ETA: 7:02:57
+Epoch:29/250 || Epochiter: 250/1250 || Iter: 35250/312500 || Loc: 0.4346 Cla: 0.9439 Landm: 8.8960 || LR: 0.00100000 || Batchtime: 0.0709 s || ETA: 5:27:45
+Epoch:29/250 || Epochiter: 500/1250 || Iter: 35500/312500 || Loc: 0.2689 Cla: 0.9863 Landm: 16.7584 || LR: 0.00100000 || Batchtime: 0.0782 s || ETA: 6:01:14
+Epoch:29/250 || Epochiter: 750/1250 || Iter: 35750/312500 || Loc: 0.7654 Cla: 1.2790 Landm: 8.3519 || LR: 0.00100000 || Batchtime: 0.0832 s || ETA: 6:23:32
+Epoch:29/250 || Epochiter: 1000/1250 || Iter: 36000/312500 || Loc: 0.5656 Cla: 0.9023 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0855 s || ETA: 6:34:13
+Epoch:29/250 || Epochiter: 1250/1250 || Iter: 36250/312500 || Loc: 0.4360 Cla: 1.3901 Landm: 5.0890 || LR: 0.00100000 || Batchtime: 0.0563 s || ETA: 4:19:25
+Epoch:30/250 || Epochiter: 250/1250 || Iter: 36500/312500 || Loc: 0.3379 Cla: 0.8381 Landm: 2.4110 || LR: 0.00100000 || Batchtime: 0.0695 s || ETA: 5:19:38
+Epoch:30/250 || Epochiter: 500/1250 || Iter: 36750/312500 || Loc: 0.3821 Cla: 1.0968 Landm: 8.2917 || LR: 0.00100000 || Batchtime: 0.0765 s || ETA: 5:51:22
+Epoch:30/250 || Epochiter: 750/1250 || Iter: 37000/312500 || Loc: 0.3787 Cla: 0.9345 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0750 s || ETA: 5:44:11
+Epoch:30/250 || Epochiter: 1000/1250 || Iter: 37250/312500 || Loc: 0.7247 Cla: 0.9477 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0722 s || ETA: 5:31:00
+Epoch:30/250 || Epochiter: 1250/1250 || Iter: 37500/312500 || Loc: 0.6829 Cla: 0.9160 Landm: 4.9215 || LR: 0.00100000 || Batchtime: 0.0643 s || ETA: 4:54:49
+Epoch:31/250 || Epochiter: 250/1250 || Iter: 37750/312500 || Loc: 0.7689 Cla: 0.9592 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0750 s || ETA: 5:43:29
+Epoch:31/250 || Epochiter: 500/1250 || Iter: 38000/312500 || Loc: 0.2177 Cla: 0.8223 Landm: 22.1621 || LR: 0.00100000 || Batchtime: 0.0811 s || ETA: 6:11:03
+Epoch:31/250 || Epochiter: 750/1250 || Iter: 38250/312500 || Loc: 0.5830 Cla: 1.1938 Landm: 9.4789 || LR: 0.00100000 || Batchtime: 0.0550 s || ETA: 4:11:28
+Epoch:31/250 || Epochiter: 1000/1250 || Iter: 38500/312500 || Loc: 0.4665 Cla: 0.9433 Landm: 11.2474 || LR: 0.00100000 || Batchtime: 0.0660 s || ETA: 5:01:12
+Epoch:31/250 || Epochiter: 1250/1250 || Iter: 38750/312500 || Loc: 0.6126 Cla: 1.2326 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0497 s || ETA: 3:46:32
+Epoch:32/250 || Epochiter: 250/1250 || Iter: 39000/312500 || Loc: 0.9377 Cla: 1.2176 Landm: 12.1821 || LR: 0.00100000 || Batchtime: 0.0672 s || ETA: 5:06:12
+Epoch:32/250 || Epochiter: 500/1250 || Iter: 39250/312500 || Loc: 0.7241 Cla: 1.3753 Landm: 20.6176 || LR: 0.00100000 || Batchtime: 0.0803 s || ETA: 6:05:43
+Epoch:32/250 || Epochiter: 750/1250 || Iter: 39500/312500 || Loc: 0.4095 Cla: 0.8379 Landm: 14.5289 || LR: 0.00100000 || Batchtime: 0.0690 s || ETA: 5:13:55
+Epoch:32/250 || Epochiter: 1000/1250 || Iter: 39750/312500 || Loc: 0.3741 Cla: 0.9605 Landm: 3.1248 || LR: 0.00100000 || Batchtime: 0.0725 s || ETA: 5:29:43
+Epoch:32/250 || Epochiter: 1250/1250 || Iter: 40000/312500 || Loc: 0.6967 Cla: 1.0341 Landm: 22.7015 || LR: 0.00100000 || Batchtime: 0.0638 s || ETA: 4:49:47
+Epoch:33/250 || Epochiter: 250/1250 || Iter: 40250/312500 || Loc: 0.5974 Cla: 1.9174 Landm: 2.7918 || LR: 0.00100000 || Batchtime: 0.0749 s || ETA: 5:39:38
+Epoch:33/250 || Epochiter: 500/1250 || Iter: 40500/312500 || Loc: 0.4784 Cla: 0.8190 Landm: 11.3835 || LR: 0.00100000 || Batchtime: 0.0638 s || ETA: 4:49:11
+Epoch:33/250 || Epochiter: 750/1250 || Iter: 40750/312500 || Loc: 0.5575 Cla: 1.1814 Landm: 8.6867 || LR: 0.00100000 || Batchtime: 0.0657 s || ETA: 4:57:43
+Epoch:33/250 || Epochiter: 1000/1250 || Iter: 41000/312500 || Loc: 0.1863 Cla: 0.5372 Landm: 11.1633 || LR: 0.00100000 || Batchtime: 0.0550 s || ETA: 4:08:44
+Epoch:33/250 || Epochiter: 1250/1250 || Iter: 41250/312500 || Loc: 0.5309 Cla: 1.1046 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0746 s || ETA: 5:37:26
+Epoch:34/250 || Epochiter: 250/1250 || Iter: 41500/312500 || Loc: 0.6036 Cla: 1.1945 Landm: 21.6277 || LR: 0.00100000 || Batchtime: 0.0750 s || ETA: 5:38:38
+Epoch:34/250 || Epochiter: 500/1250 || Iter: 41750/312500 || Loc: 0.4236 Cla: 0.9321 Landm: 13.1651 || LR: 0.00100000 || Batchtime: 0.0667 s || ETA: 5:01:12
+Epoch:34/250 || Epochiter: 750/1250 || Iter: 42000/312500 || Loc: 0.3462 Cla: 0.9318 Landm: 12.4605 || LR: 0.00100000 || Batchtime: 0.0725 s || ETA: 5:26:55
+Epoch:34/250 || Epochiter: 1000/1250 || Iter: 42250/312500 || Loc: 0.4148 Cla: 0.8168 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0774 s || ETA: 5:48:43
+Epoch:34/250 || Epochiter: 1250/1250 || Iter: 42500/312500 || Loc: 0.2512 Cla: 0.7018 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0603 s || ETA: 4:31:27
+Epoch:35/250 || Epochiter: 250/1250 || Iter: 42750/312500 || Loc: 0.2189 Cla: 0.5677 Landm: 6.7965 || LR: 0.00100000 || Batchtime: 0.0761 s || ETA: 5:42:21
+Epoch:35/250 || Epochiter: 500/1250 || Iter: 43000/312500 || Loc: 0.2271 Cla: 0.5825 Landm: 22.6579 || LR: 0.00100000 || Batchtime: 0.0747 s || ETA: 5:35:24
+Epoch:35/250 || Epochiter: 750/1250 || Iter: 43250/312500 || Loc: 0.6907 Cla: 1.2104 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0660 s || ETA: 4:56:21
+Epoch:35/250 || Epochiter: 1000/1250 || Iter: 43500/312500 || Loc: 0.3837 Cla: 0.6094 Landm: 5.7587 || LR: 0.00100000 || Batchtime: 0.0760 s || ETA: 5:40:51
+Epoch:35/250 || Epochiter: 1250/1250 || Iter: 43750/312500 || Loc: 0.9510 Cla: 1.5061 Landm: 6.9773 || LR: 0.00100000 || Batchtime: 0.0661 s || ETA: 4:55:53
+Epoch:36/250 || Epochiter: 250/1250 || Iter: 44000/312500 || Loc: 0.3717 Cla: 0.7713 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0732 s || ETA: 5:27:38
+Epoch:36/250 || Epochiter: 500/1250 || Iter: 44250/312500 || Loc: 0.3504 Cla: 0.7915 Landm: 7.4605 || LR: 0.00100000 || Batchtime: 0.0677 s || ETA: 5:02:36
+Epoch:36/250 || Epochiter: 750/1250 || Iter: 44500/312500 || Loc: 0.2640 Cla: 0.6492 Landm: 16.4797 || LR: 0.00100000 || Batchtime: 0.0651 s || ETA: 4:50:49
+Epoch:36/250 || Epochiter: 1000/1250 || Iter: 44750/312500 || Loc: 0.2846 Cla: 0.9789 Landm: 18.1236 || LR: 0.00100000 || Batchtime: 0.0837 s || ETA: 6:13:33
+Epoch:36/250 || Epochiter: 1250/1250 || Iter: 45000/312500 || Loc: 0.7595 Cla: 0.8970 Landm: 20.9710 || LR: 0.00100000 || Batchtime: 0.0560 s || ETA: 4:09:32
+Epoch:37/250 || Epochiter: 250/1250 || Iter: 45250/312500 || Loc: 0.4146 Cla: 0.8388 Landm: 4.3164 || LR: 0.00100000 || Batchtime: 0.0681 s || ETA: 5:03:29
+Epoch:37/250 || Epochiter: 500/1250 || Iter: 45500/312500 || Loc: 0.2675 Cla: 0.7503 Landm: 18.2300 || LR: 0.00100000 || Batchtime: 0.0736 s || ETA: 5:27:19
+Epoch:37/250 || Epochiter: 750/1250 || Iter: 45750/312500 || Loc: 0.9201 Cla: 1.0379 Landm: 6.8414 || LR: 0.00100000 || Batchtime: 0.0667 s || ETA: 4:56:20
+Epoch:37/250 || Epochiter: 1000/1250 || Iter: 46000/312500 || Loc: 0.4575 Cla: 0.9520 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0600 s || ETA: 4:26:36
+Epoch:37/250 || Epochiter: 1250/1250 || Iter: 46250/312500 || Loc: 0.5342 Cla: 1.0758 Landm: 6.1912 || LR: 0.00100000 || Batchtime: 0.0602 s || ETA: 4:27:12
+Epoch:38/250 || Epochiter: 250/1250 || Iter: 46500/312500 || Loc: 0.3233 Cla: 0.9023 Landm: 6.6006 || LR: 0.00100000 || Batchtime: 0.0630 s || ETA: 4:39:31
+Epoch:38/250 || Epochiter: 500/1250 || Iter: 46750/312500 || Loc: 0.5182 Cla: 1.5331 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0611 s || ETA: 4:30:40
+Epoch:38/250 || Epochiter: 750/1250 || Iter: 47000/312500 || Loc: 0.3683 Cla: 0.6545 Landm: 5.8362 || LR: 0.00100000 || Batchtime: 0.0812 s || ETA: 5:59:27
+Epoch:38/250 || Epochiter: 1000/1250 || Iter: 47250/312500 || Loc: 0.4918 Cla: 0.6552 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0732 s || ETA: 5:23:37
+Epoch:38/250 || Epochiter: 1250/1250 || Iter: 47500/312500 || Loc: 0.4425 Cla: 0.8402 Landm: 7.2697 || LR: 0.00100000 || Batchtime: 0.0521 s || ETA: 3:50:07
+Epoch:39/250 || Epochiter: 250/1250 || Iter: 47750/312500 || Loc: 0.2967 Cla: 0.6857 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0729 s || ETA: 5:21:51
+Epoch:39/250 || Epochiter: 500/1250 || Iter: 48000/312500 || Loc: 0.6983 Cla: 0.9708 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0612 s || ETA: 4:29:44
+Epoch:39/250 || Epochiter: 750/1250 || Iter: 48250/312500 || Loc: 0.4137 Cla: 0.6592 Landm: 26.1162 || LR: 0.00100000 || Batchtime: 0.0740 s || ETA: 5:25:47
+Epoch:39/250 || Epochiter: 1000/1250 || Iter: 48500/312500 || Loc: 0.4412 Cla: 1.7329 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0908 s || ETA: 6:39:33
+Epoch:39/250 || Epochiter: 1250/1250 || Iter: 48750/312500 || Loc: 0.9427 Cla: 1.2996 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0860 s || ETA: 6:18:01
+Epoch:40/250 || Epochiter: 250/1250 || Iter: 49000/312500 || Loc: 0.5302 Cla: 0.8976 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0704 s || ETA: 5:09:03
+Epoch:40/250 || Epochiter: 500/1250 || Iter: 49250/312500 || Loc: 0.4408 Cla: 0.9713 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0655 s || ETA: 4:47:18
+Epoch:40/250 || Epochiter: 750/1250 || Iter: 49500/312500 || Loc: 0.2649 Cla: 1.2857 Landm: 16.3676 || LR: 0.00100000 || Batchtime: 0.0752 s || ETA: 5:29:43
+Epoch:40/250 || Epochiter: 1000/1250 || Iter: 49750/312500 || Loc: 0.2657 Cla: 0.6678 Landm: 19.1033 || LR: 0.00100000 || Batchtime: 0.0627 s || ETA: 4:34:33
+Epoch:40/250 || Epochiter: 1250/1250 || Iter: 50000/312500 || Loc: 0.4375 Cla: 0.8768 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0638 s || ETA: 4:38:58
+Epoch:41/250 || Epochiter: 250/1250 || Iter: 50250/312500 || Loc: 0.5494 Cla: 0.8275 Landm: 17.0954 || LR: 0.00100000 || Batchtime: 0.0574 s || ETA: 4:11:05
+Epoch:41/250 || Epochiter: 500/1250 || Iter: 50500/312500 || Loc: 0.5044 Cla: 0.8819 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0696 s || ETA: 5:03:48
+Epoch:41/250 || Epochiter: 750/1250 || Iter: 50750/312500 || Loc: 0.3803 Cla: 0.6533 Landm: 7.4530 || LR: 0.00100000 || Batchtime: 0.0787 s || ETA: 5:43:17
+Epoch:41/250 || Epochiter: 1000/1250 || Iter: 51000/312500 || Loc: 0.4929 Cla: 0.8700 Landm: 5.4917 || LR: 0.00100000 || Batchtime: 0.0739 s || ETA: 5:21:58
+Epoch:41/250 || Epochiter: 1250/1250 || Iter: 51250/312500 || Loc: 0.2245 Cla: 0.7282 Landm: 18.5120 || LR: 0.00100000 || Batchtime: 0.0631 s || ETA: 4:34:38
+Epoch:42/250 || Epochiter: 250/1250 || Iter: 51500/312500 || Loc: 0.3931 Cla: 0.8332 Landm: 12.2498 || LR: 0.00100000 || Batchtime: 0.0653 s || ETA: 4:43:50
+Epoch:42/250 || Epochiter: 500/1250 || Iter: 51750/312500 || Loc: 0.3258 Cla: 0.7784 Landm: 11.0332 || LR: 0.00100000 || Batchtime: 0.0794 s || ETA: 5:44:54
+Epoch:42/250 || Epochiter: 750/1250 || Iter: 52000/312500 || Loc: 0.8471 Cla: 1.0089 Landm: 15.6455 || LR: 0.00100000 || Batchtime: 0.0566 s || ETA: 4:05:53
+Epoch:42/250 || Epochiter: 1000/1250 || Iter: 52250/312500 || Loc: 0.3764 Cla: 0.7712 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0830 s || ETA: 5:59:55
+Epoch:42/250 || Epochiter: 1250/1250 || Iter: 52500/312500 || Loc: 0.3306 Cla: 0.8957 Landm: 13.4324 || LR: 0.00100000 || Batchtime: 0.0658 s || ETA: 4:45:01
+Epoch:43/250 || Epochiter: 250/1250 || Iter: 52750/312500 || Loc: 0.3595 Cla: 1.0239 Landm: 72.3184 || LR: 0.00100000 || Batchtime: 0.0941 s || ETA: 6:47:15
+Epoch:43/250 || Epochiter: 500/1250 || Iter: 53000/312500 || Loc: 0.4572 Cla: 0.6815 Landm: 22.3781 || LR: 0.00100000 || Batchtime: 0.0782 s || ETA: 5:38:06
+Epoch:43/250 || Epochiter: 750/1250 || Iter: 53250/312500 || Loc: 0.1979 Cla: 0.6737 Landm: 12.7121 || LR: 0.00100000 || Batchtime: 0.0738 s || ETA: 5:18:45
+Epoch:43/250 || Epochiter: 1000/1250 || Iter: 53500/312500 || Loc: 0.1881 Cla: 0.6082 Landm: 20.0375 || LR: 0.00100000 || Batchtime: 0.0732 s || ETA: 5:16:00
+Epoch:43/250 || Epochiter: 1250/1250 || Iter: 53750/312500 || Loc: 0.5699 Cla: 1.0749 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0736 s || ETA: 5:17:11
+Epoch:44/250 || Epochiter: 250/1250 || Iter: 54000/312500 || Loc: 0.3305 Cla: 0.6850 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0635 s || ETA: 4:33:31
+Epoch:44/250 || Epochiter: 500/1250 || Iter: 54250/312500 || Loc: 0.4876 Cla: 1.0211 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0657 s || ETA: 4:42:34
+Epoch:44/250 || Epochiter: 750/1250 || Iter: 54500/312500 || Loc: 0.3967 Cla: 0.9217 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0655 s || ETA: 4:41:38
+Epoch:44/250 || Epochiter: 1000/1250 || Iter: 54750/312500 || Loc: 0.5214 Cla: 0.9439 Landm: 12.3276 || LR: 0.00100000 || Batchtime: 0.0784 s || ETA: 5:36:36
+Epoch:44/250 || Epochiter: 1250/1250 || Iter: 55000/312500 || Loc: 0.4061 Cla: 0.7600 Landm: 21.0016 || LR: 0.00100000 || Batchtime: 0.0480 s || ETA: 3:25:53
+Epoch:45/250 || Epochiter: 250/1250 || Iter: 55250/312500 || Loc: 0.3852 Cla: 0.7800 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0570 s || ETA: 4:04:25
+Epoch:45/250 || Epochiter: 500/1250 || Iter: 55500/312500 || Loc: 0.5208 Cla: 0.9825 Landm: 19.2040 || LR: 0.00100000 || Batchtime: 0.0705 s || ETA: 5:01:51
+Epoch:45/250 || Epochiter: 750/1250 || Iter: 55750/312500 || Loc: 0.3281 Cla: 1.1793 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0815 s || ETA: 5:48:55
+Epoch:45/250 || Epochiter: 1000/1250 || Iter: 56000/312500 || Loc: 0.2392 Cla: 0.7999 Landm: 3.9741 || LR: 0.00100000 || Batchtime: 0.0757 s || ETA: 5:23:33
+Epoch:45/250 || Epochiter: 1250/1250 || Iter: 56250/312500 || Loc: 0.4167 Cla: 0.6781 Landm: 1.9639 || LR: 0.00100000 || Batchtime: 0.0553 s || ETA: 3:56:13
+Epoch:46/250 || Epochiter: 250/1250 || Iter: 56500/312500 || Loc: 0.3121 Cla: 0.7059 Landm: 11.0885 || LR: 0.00100000 || Batchtime: 0.0608 s || ETA: 4:19:34
+Epoch:46/250 || Epochiter: 500/1250 || Iter: 56750/312500 || Loc: 1.4418 Cla: 2.0019 Landm: 12.4782 || LR: 0.00100000 || Batchtime: 0.0850 s || ETA: 6:02:25
+Epoch:46/250 || Epochiter: 750/1250 || Iter: 57000/312500 || Loc: 0.3883 Cla: 0.7214 Landm: 10.7546 || LR: 0.00100000 || Batchtime: 0.0679 s || ETA: 4:49:03
+Epoch:46/250 || Epochiter: 1000/1250 || Iter: 57250/312500 || Loc: 0.3538 Cla: 1.2122 Landm: 6.4057 || LR: 0.00100000 || Batchtime: 0.0925 s || ETA: 6:33:37
+Epoch:46/250 || Epochiter: 1250/1250 || Iter: 57500/312500 || Loc: 0.2693 Cla: 0.6083 Landm: 4.9251 || LR: 0.00100000 || Batchtime: 0.0661 s || ETA: 4:40:52
+Epoch:47/250 || Epochiter: 250/1250 || Iter: 57750/312500 || Loc: 0.5104 Cla: 0.7835 Landm: 1.4310 || LR: 0.00100000 || Batchtime: 0.0745 s || ETA: 5:16:11
+Epoch:47/250 || Epochiter: 500/1250 || Iter: 58000/312500 || Loc: 0.4178 Cla: 0.8333 Landm: 4.9278 || LR: 0.00100000 || Batchtime: 0.0659 s || ETA: 4:39:36
+Epoch:47/250 || Epochiter: 750/1250 || Iter: 58250/312500 || Loc: 0.2968 Cla: 1.0363 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0724 s || ETA: 5:06:43
+Epoch:47/250 || Epochiter: 1000/1250 || Iter: 58500/312500 || Loc: 0.3051 Cla: 0.7057 Landm: 6.8118 || LR: 0.00100000 || Batchtime: 0.0640 s || ETA: 4:30:58
+Epoch:47/250 || Epochiter: 1250/1250 || Iter: 58750/312500 || Loc: 0.2669 Cla: 0.7183 Landm: 13.9891 || LR: 0.00100000 || Batchtime: 0.0792 s || ETA: 5:34:47
+Epoch:48/250 || Epochiter: 250/1250 || Iter: 59000/312500 || Loc: 0.3370 Cla: 1.1224 Landm: 23.0886 || LR: 0.00100000 || Batchtime: 0.0899 s || ETA: 6:19:41
+Epoch:48/250 || Epochiter: 500/1250 || Iter: 59250/312500 || Loc: 0.4845 Cla: 0.7537 Landm: 49.2891 || LR: 0.00100000 || Batchtime: 0.0682 s || ETA: 4:47:47
+Epoch:48/250 || Epochiter: 750/1250 || Iter: 59500/312500 || Loc: 0.2558 Cla: 0.7165 Landm: 12.6925 || LR: 0.00100000 || Batchtime: 0.0725 s || ETA: 5:05:37
+Epoch:48/250 || Epochiter: 1000/1250 || Iter: 59750/312500 || Loc: 0.5248 Cla: 0.7664 Landm: 2.3404 || LR: 0.00100000 || Batchtime: 0.0897 s || ETA: 6:17:39
+Epoch:48/250 || Epochiter: 1250/1250 || Iter: 60000/312500 || Loc: 0.2692 Cla: 0.7154 Landm: 20.1288 || LR: 0.00100000 || Batchtime: 0.0673 s || ETA: 4:43:03
+Epoch:49/250 || Epochiter: 250/1250 || Iter: 60250/312500 || Loc: 0.4887 Cla: 0.7971 Landm: 3.7678 || LR: 0.00100000 || Batchtime: 0.0726 s || ETA: 5:05:15
+Epoch:49/250 || Epochiter: 500/1250 || Iter: 60500/312500 || Loc: 0.4115 Cla: 0.5296 Landm: 2.9523 || LR: 0.00100000 || Batchtime: 0.0571 s || ETA: 3:59:57
+Epoch:49/250 || Epochiter: 750/1250 || Iter: 60750/312500 || Loc: 0.3413 Cla: 1.2161 Landm: 8.6990 || LR: 0.00100000 || Batchtime: 0.0675 s || ETA: 4:43:05
+Epoch:49/250 || Epochiter: 1000/1250 || Iter: 61000/312500 || Loc: 0.4582 Cla: 0.9119 Landm: 7.8116 || LR: 0.00100000 || Batchtime: 0.0696 s || ETA: 4:51:52
+Epoch:49/250 || Epochiter: 1250/1250 || Iter: 61250/312500 || Loc: 0.4241 Cla: 0.7689 Landm: 16.4153 || LR: 0.00100000 || Batchtime: 0.0577 s || ETA: 4:01:29
+Epoch:50/250 || Epochiter: 250/1250 || Iter: 61500/312500 || Loc: 0.2786 Cla: 0.4941 Landm: 15.4627 || LR: 0.00100000 || Batchtime: 0.0577 s || ETA: 4:01:35
+Epoch:50/250 || Epochiter: 500/1250 || Iter: 61750/312500 || Loc: 0.6021 Cla: 0.6964 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0585 s || ETA: 4:04:33
+Epoch:50/250 || Epochiter: 750/1250 || Iter: 62000/312500 || Loc: 0.4415 Cla: 0.9543 Landm: 14.2830 || LR: 0.00100000 || Batchtime: 0.0625 s || ETA: 4:20:57
+Epoch:50/250 || Epochiter: 1000/1250 || Iter: 62250/312500 || Loc: 0.3248 Cla: 0.6909 Landm: 35.6264 || LR: 0.00100000 || Batchtime: 0.0695 s || ETA: 4:49:42
+Epoch:50/250 || Epochiter: 1250/1250 || Iter: 62500/312500 || Loc: 0.3727 Cla: 0.6623 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0667 s || ETA: 4:37:46
+Epoch:51/250 || Epochiter: 250/1250 || Iter: 62750/312500 || Loc: 0.3200 Cla: 0.7157 Landm: 7.0653 || LR: 0.00100000 || Batchtime: 0.0720 s || ETA: 4:59:53
+Epoch:51/250 || Epochiter: 500/1250 || Iter: 63000/312500 || Loc: 0.2542 Cla: 0.5955 Landm: 5.0503 || LR: 0.00100000 || Batchtime: 0.0599 s || ETA: 4:08:59
+Epoch:51/250 || Epochiter: 750/1250 || Iter: 63250/312500 || Loc: 0.3347 Cla: 0.7435 Landm: 4.4880 || LR: 0.00100000 || Batchtime: 0.0658 s || ETA: 4:33:08
+Epoch:51/250 || Epochiter: 1000/1250 || Iter: 63500/312500 || Loc: 0.3383 Cla: 0.9179 Landm: 9.5342 || LR: 0.00100000 || Batchtime: 0.0614 s || ETA: 4:14:44
+Epoch:51/250 || Epochiter: 1250/1250 || Iter: 63750/312500 || Loc: 0.1999 Cla: 0.7114 Landm: 15.7378 || LR: 0.00100000 || Batchtime: 0.0700 s || ETA: 4:50:14
+Epoch:52/250 || Epochiter: 250/1250 || Iter: 64000/312500 || Loc: 0.6762 Cla: 0.6917 Landm: 10.6403 || LR: 0.00100000 || Batchtime: 0.0564 s || ETA: 3:53:47
+Epoch:52/250 || Epochiter: 500/1250 || Iter: 64250/312500 || Loc: 0.3907 Cla: 0.8610 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0677 s || ETA: 4:40:05
+Epoch:52/250 || Epochiter: 750/1250 || Iter: 64500/312500 || Loc: 0.1855 Cla: 0.6399 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0714 s || ETA: 4:55:10
+Epoch:52/250 || Epochiter: 1000/1250 || Iter: 64750/312500 || Loc: 0.5527 Cla: 1.3064 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0751 s || ETA: 5:10:05
+Epoch:52/250 || Epochiter: 1250/1250 || Iter: 65000/312500 || Loc: 0.5348 Cla: 1.0313 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0644 s || ETA: 4:25:45
+Epoch:53/250 || Epochiter: 250/1250 || Iter: 65250/312500 || Loc: 0.4422 Cla: 0.8774 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0697 s || ETA: 4:47:08
+Epoch:53/250 || Epochiter: 500/1250 || Iter: 65500/312500 || Loc: 0.4583 Cla: 0.6804 Landm: 6.6298 || LR: 0.00100000 || Batchtime: 0.0763 s || ETA: 5:14:10
+Epoch:53/250 || Epochiter: 750/1250 || Iter: 65750/312500 || Loc: 0.3817 Cla: 0.6336 Landm: 14.6008 || LR: 0.00100000 || Batchtime: 0.0674 s || ETA: 4:37:07
+Epoch:53/250 || Epochiter: 1000/1250 || Iter: 66000/312500 || Loc: 0.5418 Cla: 0.9103 Landm: 5.9629 || LR: 0.00100000 || Batchtime: 0.0739 s || ETA: 5:03:35
+Epoch:53/250 || Epochiter: 1250/1250 || Iter: 66250/312500 || Loc: 0.4066 Cla: 0.7992 Landm: 7.3300 || LR: 0.00100000 || Batchtime: 0.0801 s || ETA: 5:28:47
+Epoch:54/250 || Epochiter: 250/1250 || Iter: 66500/312500 || Loc: 0.4250 Cla: 0.6661 Landm: 2.5452 || LR: 0.00100000 || Batchtime: 0.0721 s || ETA: 4:55:48
+Epoch:54/250 || Epochiter: 500/1250 || Iter: 66750/312500 || Loc: 0.7692 Cla: 1.0010 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0529 s || ETA: 3:36:41
+Epoch:54/250 || Epochiter: 750/1250 || Iter: 67000/312500 || Loc: 0.6215 Cla: 1.2646 Landm: 2.7585 || LR: 0.00100000 || Batchtime: 0.0677 s || ETA: 4:37:00
+Epoch:54/250 || Epochiter: 1000/1250 || Iter: 67250/312500 || Loc: 0.5879 Cla: 0.8652 Landm: 4.2702 || LR: 0.00100000 || Batchtime: 0.0643 s || ETA: 4:22:53
+Epoch:54/250 || Epochiter: 1250/1250 || Iter: 67500/312500 || Loc: 0.3407 Cla: 0.8054 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.1033 s || ETA: 7:01:39
+Epoch:55/250 || Epochiter: 250/1250 || Iter: 67750/312500 || Loc: 0.6964 Cla: 1.1577 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0872 s || ETA: 5:55:49
+Epoch:55/250 || Epochiter: 500/1250 || Iter: 68000/312500 || Loc: 0.5426 Cla: 1.0019 Landm: 14.3497 || LR: 0.00100000 || Batchtime: 0.0681 s || ETA: 4:37:23
+Epoch:55/250 || Epochiter: 750/1250 || Iter: 68250/312500 || Loc: 0.4070 Cla: 1.1973 Landm: 4.1167 || LR: 0.00100000 || Batchtime: 0.0832 s || ETA: 5:38:38
+Epoch:55/250 || Epochiter: 1000/1250 || Iter: 68500/312500 || Loc: 0.2171 Cla: 0.5641 Landm: 19.7859 || LR: 0.00100000 || Batchtime: 0.0657 s || ETA: 4:27:18
+Epoch:55/250 || Epochiter: 1250/1250 || Iter: 68750/312500 || Loc: 0.3044 Cla: 0.5609 Landm: 10.5646 || LR: 0.00100000 || Batchtime: 0.0605 s || ETA: 4:05:44
+Epoch:56/250 || Epochiter: 250/1250 || Iter: 69000/312500 || Loc: 0.2206 Cla: 0.8320 Landm: 3.8769 || LR: 0.00100000 || Batchtime: 0.0682 s || ETA: 4:36:56
+Epoch:56/250 || Epochiter: 500/1250 || Iter: 69250/312500 || Loc: 0.7289 Cla: 0.9034 Landm: 13.0918 || LR: 0.00100000 || Batchtime: 0.0625 s || ETA: 4:13:20
+Epoch:56/250 || Epochiter: 750/1250 || Iter: 69500/312500 || Loc: 0.2998 Cla: 0.7207 Landm: 15.0111 || LR: 0.00100000 || Batchtime: 0.0819 s || ETA: 5:31:48
+Epoch:56/250 || Epochiter: 1000/1250 || Iter: 69750/312500 || Loc: 0.1743 Cla: 0.6477 Landm: 14.0803 || LR: 0.00100000 || Batchtime: 0.0620 s || ETA: 4:10:40
+Epoch:56/250 || Epochiter: 1250/1250 || Iter: 70000/312500 || Loc: 0.4249 Cla: 0.8488 Landm: 16.0425 || LR: 0.00100000 || Batchtime: 0.0745 s || ETA: 5:01:06
+Epoch:57/250 || Epochiter: 250/1250 || Iter: 70250/312500 || Loc: 0.2012 Cla: 0.5496 Landm: 12.6434 || LR: 0.00100000 || Batchtime: 0.0661 s || ETA: 4:26:58
+Epoch:57/250 || Epochiter: 500/1250 || Iter: 70500/312500 || Loc: 0.6171 Cla: 1.4139 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0787 s || ETA: 5:17:15
+Epoch:57/250 || Epochiter: 750/1250 || Iter: 70750/312500 || Loc: 0.3839 Cla: 0.8437 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0742 s || ETA: 4:59:08
+Epoch:57/250 || Epochiter: 1000/1250 || Iter: 71000/312500 || Loc: 0.3372 Cla: 0.9499 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0735 s || ETA: 4:55:44
+Epoch:57/250 || Epochiter: 1250/1250 || Iter: 71250/312500 || Loc: 0.3660 Cla: 0.6897 Landm: 13.7740 || LR: 0.00100000 || Batchtime: 0.0498 s || ETA: 3:20:04
+Epoch:58/250 || Epochiter: 250/1250 || Iter: 71500/312500 || Loc: 0.4823 Cla: 0.7519 Landm: 11.7704 || LR: 0.00100000 || Batchtime: 0.0721 s || ETA: 4:49:35
+Epoch:58/250 || Epochiter: 500/1250 || Iter: 71750/312500 || Loc: 0.5040 Cla: 0.7262 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0676 s || ETA: 4:31:13
+Epoch:58/250 || Epochiter: 750/1250 || Iter: 72000/312500 || Loc: 0.5207 Cla: 1.5280 Landm: 37.5935 || LR: 0.00100000 || Batchtime: 0.0897 s || ETA: 5:59:33
+Epoch:58/250 || Epochiter: 1000/1250 || Iter: 72250/312500 || Loc: 0.2207 Cla: 0.5629 Landm: 18.3676 || LR: 0.00100000 || Batchtime: 0.0746 s || ETA: 4:58:46
+Epoch:58/250 || Epochiter: 1250/1250 || Iter: 72500/312500 || Loc: 0.5569 Cla: 0.9432 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0714 s || ETA: 4:45:35
+Epoch:59/250 || Epochiter: 250/1250 || Iter: 72750/312500 || Loc: 0.4360 Cla: 0.7512 Landm: 7.9555 || LR: 0.00100000 || Batchtime: 0.0634 s || ETA: 4:13:15
+Epoch:59/250 || Epochiter: 500/1250 || Iter: 73000/312500 || Loc: 0.2590 Cla: 0.5503 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0688 s || ETA: 4:34:49
+Epoch:59/250 || Epochiter: 750/1250 || Iter: 73250/312500 || Loc: 0.3010 Cla: 0.6965 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0653 s || ETA: 4:20:19
+Epoch:59/250 || Epochiter: 1000/1250 || Iter: 73500/312500 || Loc: 0.3212 Cla: 0.6019 Landm: 6.8969 || LR: 0.00100000 || Batchtime: 0.0558 s || ETA: 3:42:18
+Epoch:59/250 || Epochiter: 1250/1250 || Iter: 73750/312500 || Loc: 0.3489 Cla: 0.6993 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0485 s || ETA: 3:12:47
+Epoch:60/250 || Epochiter: 250/1250 || Iter: 74000/312500 || Loc: 0.2986 Cla: 0.7731 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0625 s || ETA: 4:08:16
+Epoch:60/250 || Epochiter: 500/1250 || Iter: 74250/312500 || Loc: 0.2634 Cla: 0.7046 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0649 s || ETA: 4:17:46
+Epoch:60/250 || Epochiter: 750/1250 || Iter: 74500/312500 || Loc: 0.4979 Cla: 0.6947 Landm: 1.8337 || LR: 0.00100000 || Batchtime: 0.0713 s || ETA: 4:42:41
+Epoch:60/250 || Epochiter: 1000/1250 || Iter: 74750/312500 || Loc: 0.3582 Cla: 0.9856 Landm: 39.5051 || LR: 0.00100000 || Batchtime: 0.0787 s || ETA: 5:11:50
+Epoch:60/250 || Epochiter: 1250/1250 || Iter: 75000/312500 || Loc: 0.3067 Cla: 0.7399 Landm: 3.9973 || LR: 0.00100000 || Batchtime: 0.0640 s || ETA: 4:13:16
+Epoch:61/250 || Epochiter: 250/1250 || Iter: 75250/312500 || Loc: 0.5591 Cla: 0.7888 Landm: 24.1341 || LR: 0.00100000 || Batchtime: 0.0678 s || ETA: 4:27:54
+Epoch:61/250 || Epochiter: 500/1250 || Iter: 75500/312500 || Loc: 0.8530 Cla: 1.2159 Landm: 13.3633 || LR: 0.00100000 || Batchtime: 0.0769 s || ETA: 5:03:47
+Epoch:61/250 || Epochiter: 750/1250 || Iter: 75750/312500 || Loc: 0.3981 Cla: 0.9117 Landm: 17.4058 || LR: 0.00100000 || Batchtime: 0.0933 s || ETA: 6:08:08
+Epoch:61/250 || Epochiter: 1000/1250 || Iter: 76000/312500 || Loc: 0.3285 Cla: 0.7499 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0706 s || ETA: 4:38:19
+Epoch:61/250 || Epochiter: 1250/1250 || Iter: 76250/312500 || Loc: 0.3147 Cla: 0.5849 Landm: 16.1414 || LR: 0.00100000 || Batchtime: 0.0601 s || ETA: 3:56:42
+Epoch:62/250 || Epochiter: 250/1250 || Iter: 76500/312500 || Loc: 0.3330 Cla: 1.1745 Landm: 8.1173 || LR: 0.00100000 || Batchtime: 0.0588 s || ETA: 3:51:18
+Epoch:62/250 || Epochiter: 500/1250 || Iter: 76750/312500 || Loc: 0.4236 Cla: 0.8148 Landm: 1.7799 || LR: 0.00100000 || Batchtime: 0.0695 s || ETA: 4:33:16
+Epoch:62/250 || Epochiter: 750/1250 || Iter: 77000/312500 || Loc: 0.7481 Cla: 1.4642 Landm: 18.9750 || LR: 0.00100000 || Batchtime: 0.0787 s || ETA: 5:08:49
+Epoch:62/250 || Epochiter: 1000/1250 || Iter: 77250/312500 || Loc: 0.4594 Cla: 1.2435 Landm: 0.0000 || LR: 0.00100000 || Batchtime: 0.0634 s || ETA: 4:08:43
+Epoch:62/250 || Epochiter: 1250/1250 || Iter: 77500/312500 || Loc: 0.2630 Cla: 0.6324 Landm: 22.4276 || LR: 0.00100000 || Batchtime: 0.0505 s || ETA: 3:17:52
+Epoch:63/250 || Epochiter: 250/1250 || Iter: 77750/312500 || Loc: 0.4236 Cla: 0.8708 Landm: 10.2582 || LR: 0.00100000 || Batchtime: 0.0689 s || ETA: 4:29:37
+Epoch:63/250 || Epochiter: 500/1250 || Iter: 78000/312500 || Loc: 0.1625 Cla: 0.6158 Landm: 19.1964 || LR: 0.00100000 || Batchtime: 0.0747 s || ETA: 4:52:04
+Epoch:63/250 || Epochiter: 750/1250 || Iter: 78250/312500 || Loc: 0.3187 Cla: 0.6298 Landm: 16.5061 || LR: 0.00100000 || Batchtime: 0.0715 s || ETA: 4:39:18
+Epoch:63/250 || Epochiter: 1000/1250 || Iter: 78500/312500 || Loc: 0.4514 Cla: 0.6914 Landm: 5.7426 || LR: 0.00100000 || Batchtime: 0.0565 s || ETA: 3:40:21
+Traceback (most recent call last):
+  File "Pytorch_Retinaface/train.py", line 169, in <module>
+    train()
+  File "Pytorch_Retinaface/train.py", line 138, in train
+    loss_l, loss_c, loss_landm = criterion(out, priors, targets)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/Pytorch_Retinaface/layers/modules/multibox_loss.py", line 71, in forward
+    match(self.threshold, truths, defaults, self.variance, labels, landms, loc_t, conf_t, landm_t, idx)
+  File "/work/Pytorch_Retinaface/utils/box_utils.py", line 118, in match
+    point_form(priors)
+  File "/work/Pytorch_Retinaface/utils/box_utils.py", line 66, in jaccard
+    (box_b[:, 3]-box_b[:, 1])).unsqueeze(0).expand_as(inter)  # [A,B]
+KeyboardInterrupt
